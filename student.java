@@ -9,6 +9,17 @@ class Student {
    private int points;
    private double gradePoint;
 
+   public Student() {
+   }
+
+   // constructor to initialize the values
+   public Student(String aID, int aNumberOfCredits, int aPoints) {
+       super();
+       ID = aID;
+       numberOfCredits = aNumberOfCredits;
+       points = aPoints;
+       calculateGradePoint();
+   }
 
    // getters and setters
    public String getID() {
